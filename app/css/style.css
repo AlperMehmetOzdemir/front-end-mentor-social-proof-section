@@ -1,1 +1,111 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: "Spartan", sans-serif;
+  background-color: white;
+}
+
+h1 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  font-size: 2rem;
+  color: #502050;
+  line-height: 1.15;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #937b92;
+  line-height: 1.5;
+}
+
+header {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  background: #f7f2f7;
+  border-radius: 0.4rem;
+}
+
+.rating__stars {
+  margin-bottom: 1rem;
+}
+
+.rating__text {
+  color: #502050;
+  font-weight: 700;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 3rem 2rem 2rem 2rem;
+  background-color: #502050;
+  border-radius: 0.4rem;
+}
+
+.review__header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.review__header__image {
+  border-radius: 50%;
+  margin-right: 2rem;
+  height: 3rem;
+}
+
+.review__header__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.review__header__name {
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.review__header__verified {
+  margin: 0;
+  color: #ee68a4;
+  font-size: 1rem;
+}
+
+.review__text {
+  margin-bottom: 0;
+  color: #f7f2f7;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+html {
+  font-size: $fontSize;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: $fontFamily;
+  background-color: $white;
+}
+
+h1 {
+  margin-left: 0.75rem; 
+  margin-right: 0.75rem; 
+  font-size: 2rem;
+  color: $veryDarkMagenta;
+  line-height: 1.15;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $darkGrayishMagenta;
+  line-height: 1.5;
+}
+
+header {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
