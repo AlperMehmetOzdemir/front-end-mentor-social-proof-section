@@ -3,6 +3,12 @@
   flex-direction: column;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint-up(large) {
+    grid-area: 1 / 2 / 1 span / 1 span;
+  }
 }
 
 .rating {
@@ -10,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin: 0.5rem 0;
   padding: 1rem;
   background: $lightGrayishMagenta;
@@ -17,10 +24,30 @@
 
   &__stars {
     margin-bottom: 1rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
   }
 
   &__text {
     color: $veryDarkMagenta;
     font-weight: 700;
+  }
+  @include breakpoint-up(large) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 0;
+    padding: 1.2rem;
+
+    &:nth-child(2) {
+      margin-left: 10%;
+    }
+
+    &:nth-child(3) {
+      margin-left: 20%;
+    }
   }
 }
